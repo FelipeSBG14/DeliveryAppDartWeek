@@ -1,4 +1,3 @@
-import 'package:bloc/bloc.dart';
 import 'package:delivery_app/app/core/ui/helpers/loader.dart';
 import 'package:delivery_app/app/core/ui/helpers/messages.dart';
 import 'package:flutter/cupertino.dart';

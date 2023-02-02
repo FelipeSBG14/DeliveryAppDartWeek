@@ -13,7 +13,7 @@ class ThemeConfig {
 
   static final theme = ThemeData(
     scaffoldBackgroundColor: Colors.white,
-    appBarTheme: AppBarTheme(
+    appBarTheme: const AppBarTheme(
         backgroundColor: Colors.white,
         elevation: 0,
         centerTitle: true,
@@ -31,7 +31,7 @@ class ThemeConfig {
       fillColor: Colors.white,
       filled: true,
       isDense: true,
-      contentPadding: EdgeInsets.all(13),
+      contentPadding: const EdgeInsets.all(13),
       border: _defaultInputBorder,
       enabledBorder: _defaultInputBorder,
       focusedBorder: _defaultInputBorder,
