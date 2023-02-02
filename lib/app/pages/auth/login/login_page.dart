@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     TextButton(
                         onPressed: () {
-                          Navigator.of(context).pushNamed('auth/register');
+                          Navigator.of(context).pushNamed('/auth/register');
                         },
                         child: Text(
                           'Cadastre-se',
