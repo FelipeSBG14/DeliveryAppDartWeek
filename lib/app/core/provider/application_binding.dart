@@ -16,11 +16,9 @@ class ApplicationBinding extends StatelessWidget {
         Provider(
           create: (context) => CustomDio(),
         ),
-        Provider(
-          create: (context) => AuthRepositoryImpl(
-            dio: context.read(),
-          ),
-        )
+        Provider<AuthRepository>(
+          create: (context) => AuthRepositoryImpl(dio: context.read()),
+        ),
       ],
       child: child,
     );
