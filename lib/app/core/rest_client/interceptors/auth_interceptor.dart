@@ -15,6 +15,7 @@ class AuthInterceptor extends Interceptor {
   void onError(DioError err, ErrorInterceptorHandler handler) async {
     if (err.response?.statusCode == 401) {
       // Redirecionar o usuario para a tela de Home
+      print('cai aqui');
       final sp = await SharedPreferences.getInstance();
       sp.clear();
       handler.next(err);
