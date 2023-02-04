@@ -1,3 +1,4 @@
+import 'package:delivery_app/app/core/global/global_context.dart';
 import 'package:dio/dio.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -12,13 +13,10 @@ class AuthInterceptor extends Interceptor {
   }
 
   @override
-  void onError(DioError err, ErrorInterceptorHandler handler) async {
+  Future<void> onError(DioError err, ErrorInterceptorHandler handler) async {
     if (err.response?.statusCode == 401) {
       // Redirecionar o usuario para a tela de Home
-      print('cai aqui');
-      final sp = await SharedPreferences.getInstance();
-      sp.clear();
-      handler.next(err);
+      GlobalContext.instance.loginExpire();
     } else {
       handler.next(err);
     }
