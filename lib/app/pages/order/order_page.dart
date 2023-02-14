@@ -1,8 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:delivery_app/app/core/extensions/formatter_extensions.dart';
 import 'package:delivery_app/app/core/ui/styles/text_styles.dart';
 import 'package:delivery_app/app/core/ui/widget/delivery_appbar.dart';
 import 'package:delivery_app/app/core/ui/widget/delivery_button.dart';
-import 'package:delivery_app/app/dto/order_dto.dart';
 import 'package:delivery_app/app/dto/order_product_dto.dart';
 import 'package:delivery_app/app/models/payment_type_model.dart';
 import 'package:delivery_app/app/pages/order/widget/order_controller.dart';
@@ -10,7 +10,6 @@ import 'package:delivery_app/app/pages/order/widget/order_field.dart';
 import 'package:delivery_app/app/pages/order/widget/order_product_tile.dart';
 import 'package:delivery_app/app/pages/order/widget/order_state.dart';
 import 'package:delivery_app/app/pages/order/widget/payment_types_field.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:validatorless/validatorless.dart';
 import '../../core/ui/base_state/base_state.dart';

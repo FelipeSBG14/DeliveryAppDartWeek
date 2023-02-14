@@ -4,7 +4,6 @@ import 'package:delivery_app/app/pages/home/widgets/home_controller.dart';
 import 'package:delivery_app/app/pages/home/widgets/home_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import '../../core/ui/base_state/base_state.dart';
 import '../../core/ui/widget/delivery_appbar.dart';
 
